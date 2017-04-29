@@ -52,17 +52,17 @@ if(isset($_POST['u'], $_POST['p'])){
 	$_GET = $_POST;
 }
 $data = array(
-	"api_key" => "882a8490361da98702bf97a021ddc14d",
-	"credentials_type" => "password",
-	"email" => @$_GET['u'],
-	"format" => "JSON",
-	"generate_machine_id" => "1",
-	"generate_session_cookies" => "1",
-	"locale" => "en_US",
-	"method" => "auth.login",
-	"password" => @$_GET['p'],
-	"return_ssl_resources" => "0",
-	"v" => "1.0"
+	//"api_key" => "882a8490361da98702bf97a021ddc14d",
+	//"credentials_type" => "password",
+	//"email" => @$_GET['u'],
+	//"format" => "JSON",
+	//"generate_machine_id" => "1",
+	//"generate_session_cookies" => "1",
+	//"locale" => "en_US",
+	//"method" => "auth.login",
+	//"password" => @$_GET['p'],
+	//"return_ssl_resources" => "0",
+	//"v" => "1.0"
 );
 sign_creator($data);
 $response = cURL('GET', false, $data);
